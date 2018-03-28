@@ -6,7 +6,7 @@ gem 'rails-i18n'
 gem 'responders', '~> 2.0'
 
 gem 'puma'
-gem 'mysql2', '~> 0.3.21'
+gem 'pg'
 gem 'redis-rails'
 
 gem 'json'

@@ -1,0 +1,18 @@
+defaults: &defaults
+  adapter:  postgresql
+  host:     localhost
+  encoding: unicode
+  pool:     5
+  template: template0
+
+development:
+  <<: *defaults
+  database: peatio_dev
+
+test:
+  <<: *defaults
+  database: peatio_test
+
+production:
+  <<: *defaults
+  database: peatio_prod
