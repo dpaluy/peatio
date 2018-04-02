@@ -37,7 +37,7 @@ class Proof < ActiveRecord::Base
 end
 
 # == Schema Information
-# Schema version: 20180227163417
+# Schema version: 20180315185255
 #
 # Table name: proofs
 #
@@ -48,7 +48,7 @@ end
 #  created_at  :datetime
 #  updated_at  :datetime
 #  sum         :string(255)
-#  addresses   :text(65535)
+#  addresses   :text
 #  balance     :string(30)
 #
 # Indexes

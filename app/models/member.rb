@@ -152,18 +152,18 @@ class Member < ActiveRecord::Base
 end
 
 # == Schema Information
-# Schema version: 20180216145412
+# Schema version: 20180315185255
 #
 # Table name: members
 #
 #  id           :integer          not null, primary key
-#  level        :string(20)       default("")
 #  sn           :string(12)       not null
-#  email        :string(255)      not null
-#  disabled     :boolean          default(FALSE), not null
-#  api_disabled :boolean          default(FALSE), not null
+#  email        :string           not null
 #  created_at   :datetime         not null
 #  updated_at   :datetime         not null
+#  disabled     :boolean          default(FALSE), not null
+#  api_disabled :boolean          default(FALSE), not null
+#  level        :string(20)       default("")
 #
 # Indexes
 #

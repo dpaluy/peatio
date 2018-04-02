@@ -21,14 +21,14 @@ class Authentication < ActiveRecord::Base
 end
 
 # == Schema Information
-# Schema version: 20180216145412
+# Schema version: 20180315185255
 #
 # Table name: authentications
 #
 #  id         :integer          not null, primary key
 #  provider   :string(255)
 #  uid        :string(255)
-#  token      :text(65535)
+#  token      :text
 #  member_id  :integer
 #  created_at :datetime
 #  updated_at :datetime
