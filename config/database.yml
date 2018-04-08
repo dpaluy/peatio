@@ -16,3 +16,8 @@ test:
 production:
   <<: *defaults
   database: peatio_prod
+  host: <%= ENV['POSTGRES_HOSTNAME'] || 'localhost' %>
+  port: <%= ENV['POSTGRES_DB_PORT'] || 5432 %>
+  pool: 12
+  username: <%= ENV['POSTGRES_DB_USERNAME'] %>
+  password: <%= ENV['POSTGRES_DB_PASSWORD'] %>

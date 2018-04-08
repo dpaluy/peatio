@@ -97,3 +97,12 @@ group :test do
   gem 'rack_session_access', '~> 0.1'
   gem 'webmock',             '~> 3.3'
 end
+
+group :development do
+  gem 'capistrano', '~> 3.9'
+  gem 'capistrano-rails', '~> 1.1'
+  gem 'capistrano-rbenv'
+  gem 'capistrano3-puma'
+  gem 'capistrano3-nginx'
+  gem 'capistrano-upload-config'
+end
