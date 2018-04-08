@@ -43,7 +43,8 @@ server "34.245.249.193", user: "ubuntu", roles: %w{app db web}
 # --------------
 set :ssh_options, {
    keys: %w(~/.ssh/mikado-ec2.pem),
-   forward_agent: true
+   forward_agent: true,
+   auth_methods: ["publickey"]
 }
 #
 # The server-based syntax can be used to override options:
