@@ -8,7 +8,10 @@ set :branch, 'mkd'
 set :deploy_to, '/var/www/mikado'
 set :scm, :git
 
-set :linked_files, fetch(:linked_files, []).push('config/secrets.yml', 'config/puma.rb')
+set :linked_files, fetch(:linked_files, []).push(
+  'config/application.yml', 'config/puma.rb', 'config/deposit_channels.yml',
+  'config/markets.yml', 'config/withdraw_channels.yml'
+)
 
 set :format, :pretty
 set :log_level, :debug
