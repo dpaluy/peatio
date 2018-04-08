@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
+git_source(:github) { |repo_name| "https://github.com/#{repo_name}" }
 
 gem 'rails', '~> 4.2'
 gem 'rails-i18n'
 gem 'responders', '~> 2.0'
 
 gem 'puma'
-gem 'mysql2', '~> 0.3.21'
+gem 'pg', '~> 0.15'
 gem 'redis-rails'
 
 gem 'json'
