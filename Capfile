@@ -33,8 +33,8 @@ install_plugin Capistrano::Puma::Nginx # if you want to upload a nginx site temp
 # require "capistrano/scm/svn"
 # install_plugin Capistrano::SCM::Svn
 # or
-require "capistrano/scm/git"
-install_plugin Capistrano::SCM::Git
+require "capistrano/deploy"
+
 
 # Include tasks from other gems included in your Gemfile
 #
