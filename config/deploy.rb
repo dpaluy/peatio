@@ -6,7 +6,6 @@ set :repo_url, "git@github.com:dpaluy/peatio.git"
 set :branch, 'mkd'
 
 set :deploy_to, '/var/www/mikado'
-set :scm, :git
 
 set :linked_files, fetch(:linked_files, []).push(
   'config/application.yml', 'config/puma.rb', 'config/deposit_channels.yml',
