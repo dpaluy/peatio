@@ -20,6 +20,7 @@ require 'capistrano/nginx'
 require 'capistrano/puma'
 require 'capistrano/puma/nginx'
 require 'capistrano/upload-config'
+require 'capistrano/figaro_yml'
 
 install_plugin Capistrano::Puma # Default puma tasks
 install_plugin Capistrano::Puma::Jungle # if you need the jungle tasks

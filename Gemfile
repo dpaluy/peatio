@@ -105,4 +105,5 @@ group :development do
   gem 'capistrano3-puma'
   gem 'capistrano3-nginx'
   gem 'capistrano-upload-config'
+  gem 'capistrano-figaro-yml'
 end
