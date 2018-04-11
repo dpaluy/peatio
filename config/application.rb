@@ -9,6 +9,8 @@ Bundler.require(*Rails.groups)
 module Peatio
   class Application < Rails::Application
 
+    Figaro.load
+
     # Configure Sentry as early as possible.
     if ENV['SENTRY_DSN_BACKEND'].present? && ENV['SENTRY_ENV'].to_s.split(',').include?(Rails.env)
       require 'sentry-raven'
