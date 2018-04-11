@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  include Concerns::BasicAuthUtils
   include SessionUtils
   protect_from_forgery with: :exception
 
