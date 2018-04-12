@@ -72,10 +72,10 @@ gem 'method-not-implemented', '~> 1.0'
 gem 'passgen', '~> 1.0'
 gem 'validates_lengths_from_database', '~> 0.7.0'
 gem 'ejs','~> 1.1'
+gem 'factory_bot_rails'
+gem 'faker', '~> 1.4.3'
 
 group :development, :test do
-  gem 'factory_bot_rails'
-  gem 'faker', '~> 1.4.3'
   gem 'binding_of_caller'
   gem 'quiet_assets'
   gem 'timecop'
